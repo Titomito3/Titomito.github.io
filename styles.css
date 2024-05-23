@@ -1,49 +1,30 @@
-/*uso de flexbox*/
-.flex-container {
+.content{
     display: flex;
-    flex-direction: row;
-    .left {
-        flex:50%;
-    }
-    .right {
-        flex:50%;
-    }
+    width: 100%;
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+
 }
-@media (max-width: 800px) {
-    .flex-container{
-        .left, .right{
-            flex:100%;
-            flex-direction: column;
-        }
-        .nav{
-            flex-direction: row;
-        }
-    }
+.content-map iframe{
+    width: 100%;
 }
-@media (max-width: 350px) {
-    .flex-container{
-        .nav{
-            flex-direction: column;
-        }
-    } 
-}
-@media(max-width:950px){
+@media (max-width: 950px) {
     .content{
-        width:100px;
-        height: 300px;
+        flex-direction: column;
     }
     .content-map iframe{
         width: 100%;
-        height:200px;
+        height: 300%;
     }
 }
-@media (max-width:400px){
+@media (max-width: 400px) {
     .content-map iframe{
         width: 100%;
-        height: 200px;
+        height: 200%;
     }
     .content-nav{
-        flex-direction:column;
-        width:100%;
+        flex-direction: column;
+        width: 100%;
     }
 }
